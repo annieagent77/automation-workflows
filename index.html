@@ -1,262 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Save 5+ Hours Per Client | Client Onboarding Automation Templates</title>
-    <meta name="description" content="Stop manually onboarding clients. Get ready-to-use Zapier, Make & n8n workflows. $19 each or $67 for all 5.">
-    
-    <!-- Google Analytics 4 - Add your measurement ID -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');
-    </script>
-    
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1a1a1a; background: #f8f9fa; }
-        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
-        header { text-align: center; padding: 60px 20px; background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); color: white; }
-        header h1 { font-size: 2.5rem; margin-bottom: 15px; }
-        header p { font-size: 1.2rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
-        .hero-tag { display: inline-block; background: #4CAF50; color: white; padding: 8px 20px; border-radius: 25px; font-size: 0.9rem; margin-bottom: 20px; font-weight: 600; }
-        .subheadline { font-size: 1.3rem; color: #e0e0e0; margin-top: 15px; font-weight: 400; }
-        .workflows { display: grid; gap: 25px; margin: 40px 0; }
-        .workflow-card { background: white; border-radius: 12px; padding: 25px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-left: 5px solid #4CAF50; transition: transform 0.2s; }
-        .workflow-card:hover { transform: translateY(-3px); }
-        .workflow-card h3 { margin-bottom: 10px; color: #1a1a1a; font-size: 1.3rem; }
-        .workflow-card .benefit { color: #4CAF50; font-weight: 600; font-size: 0.9rem; margin-bottom: 8px; }
-        .workflow-card p { color: #666; font-size: 0.95rem; }
-        .workflow-card .apps { display: flex; flex-wrap: wrap; gap: 8px; margin: 15px 0; }
-        .workflow-card .app-tag { background: #e8f5e9; color: #2e7d32; padding: 5px 14px; border-radius: 18px; font-size: 0.8rem; font-weight: 500; }
-        .workflow-card .price-row { display: flex; justify-content: space-between; align-items: center; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; }
-        .workflow-card .individual-price { font-size: 1.2rem; font-weight: 700; color: #1a1a1a; }
-        .workflow-card .buy-btn { background: #4CAF50; color: white; padding: 10px 25px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.9rem; }
-        .trust-badges { display: flex; justify-content: center; gap: 30px; margin: 30px 0; flex-wrap: wrap; }
-        .trust-badge { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; color: #666; }
-        .trust-badge span { font-size: 1.5rem; }
-        
-        /* Testimonials Section */
-        .testimonials { background: #f1f8e9; padding: 50px 20px; margin: 40px 0; border-radius: 12px; }
-        .testimonials h2 { text-align: center; margin-bottom: 30px; color: #1a1a1a; }
-        .testimonial-grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
-        .testimonial-card { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
-        .testimonial-text { font-style: italic; color: #555; margin-bottom: 15px; }
-        .testimonial-author { font-weight: 600; color: #1a1a1a; }
-        .testimonial-role { font-size: 0.85rem; color: #666; }
-        
-        /* FAQ Section */
-        .faq-section { padding: 50px 20px; margin: 40px 0; }
-        .faq-section h2 { text-align: center; margin-bottom: 30px; color: #1a1a1a; }
-        .faq-item { background: white; border-radius: 8px; padding: 20px; margin-bottom: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
-        .faq-question { font-weight: 600; font-size: 1.05rem; color: #1a1a1a; margin-bottom: 8px; }
-        .faq-answer { color: #555; font-size: 0.95rem; }
-        
-        .cta-section { background: white; border-radius: 12px; padding: 40px; text-align: center; margin: 40px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
-        .cta-section h2 { margin-bottom: 15px; font-size: 2rem; }
-        .cta-section .price { font-size: 3rem; font-weight: 700; color: #1a1a1a; margin: 20px 0; }
-        .cta-section .price span { font-size: 1.2rem; font-weight: 400; color: #666; }
-        .cta-section .price .strike { text-decoration: line-through; color: #999; font-size: 1.5rem; }
-        .cta-button { display: inline-block; background: #4CAF50; color: white; padding: 18px 50px; border-radius: 8px; font-size: 1.2rem; font-weight: 600; text-decoration: none; transition: all 0.2s; box-shadow: 0 4px 15px rgba(76,175,80,0.4); }
-        .cta-button:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(76,175,80,0.5); }
-        .upgrade-box { background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border: 2px solid #ff9800; border-radius: 12px; padding: 25px; margin: 30px 0; text-align: left; }
-        .upgrade-box h3 { color: #e65100; margin-bottom: 10px; }
-        .upgrade-box ul { margin: 15px 0; padding-left: 20px; }
-        .upgrade-box li { margin-bottom: 8px; color: #5d4037; }
-        .upgrade-box .upgrade-price { font-size: 1.8rem; font-weight: 700; color: #e65100; }
-        .guarantee { margin-top: 20px; color: #666; font-size: 0.9rem; }
-        .urgency { color: #ff5722; font-weight: 600; margin-top: 10px; font-size: 0.9rem; }
-        footer { text-align: center; padding: 40px 20px; color: #666; font-size: 0.9rem; }
-        @media (max-width: 600px) {
-            header h1 { font-size: 1.8rem; }
-            .cta-section .price { font-size: 2rem; }
-            .workflow-card .price-row { flex-direction: column; gap: 15px; }
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Practical client-onboarding workflow recipes and a fixed-scope workflow setup pilot for small agencies and freelancers.">
+  <title>Client Onboarding Workflow Recipes &amp; Setup</title>
+  <style>
+    :root { color-scheme: light; --ink:#17212b; --muted:#52606d; --accent:#145c4b; --paper:#f5f7f6; --line:#d9e1dd; }
+    * { box-sizing: border-box; }
+    body { margin:0; font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; color:var(--ink); background:var(--paper); }
+    main { max-width:900px; margin:auto; padding:32px 20px 56px; }
+    header { padding:38px 0 24px; }
+    h1 { max-width:760px; margin:0 0 12px; font-size:clamp(2rem,5vw,3.2rem); line-height:1.12; }
+    h2 { margin:0 0 10px; line-height:1.25; }
+    p { margin:0 0 14px; }
+    .intro,.note { color:var(--muted); max-width:720px; }
+    .offers { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px; margin:22px 0; }
+    .card { background:white; border:1px solid var(--line); border-radius:12px; padding:24px; }
+    .price { font-size:1.8rem; font-weight:750; margin:12px 0; }
+    ul { padding-left:20px; margin:10px 0 18px; }
+    li { margin:5px 0; }
+    .button { display:inline-block; padding:11px 17px; border-radius:7px; background:var(--accent); color:white; font-weight:700; text-decoration:none; }
+    .button:focus,.button:hover { background:#0d4538; }
+    .note { border-left:4px solid var(--accent); padding:12px 16px; background:#eaf1ee; margin-top:22px; }
+    footer { margin-top:32px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:.95rem; }
+    a { color:var(--accent); }
+    footer a { color:inherit; }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <span class="hero-tag">🚀 Save 5+ Hours Every Single Month</span>
-            <h1>Client Onboarding Automation Templates</h1>
-            <p class="subheadline">Automate your entire client onboarding in minutes. No more copying/pasting welcome emails or manually sending contracts.</p>
-        </div>
-    </header>
+<main>
+  <header>
+    <h1>Practical workflow recipes for client onboarding</h1>
+    <p class="intro">Written, platform-neutral guides for agencies and independent service providers, plus a narrowly scoped workflow setup option. Clear limits, no promised time savings or business results.</p>
+  </header>
 
-    <div class="container">
-        <div class="trust-badges">
-            <div class="trust-badge"><span>⚡</span> 5-Minute Setup</div>
-            <div class="trust-badge"><span>💰</span> 100% Money-Back Guarantee</div>
-            <div class="trust-badge"><span>📦</span> Instant Download</div>
-        </div>
+  <section class="offers" aria-label="Offers">
+    <article class="card">
+      <h2>Five client-onboarding workflow recipes</h2>
+      <p>Includes five written workflow outlines, field checklists, safeguards, and dummy-data acceptance tests.</p>
+      <ul>
+        <li>New inquiry → lead record and acknowledgement</li>
+        <li>Signed contract → onboarding task</li>
+        <li>New client → welcome checklist</li>
+        <li>Completed call → follow-up draft and task</li>
+        <li>Overdue onboarding item → internal reminder</li>
+      </ul>
+      <p><strong>Format:</strong> two Markdown documents in a ZIP. These are recipes, not import-ready Zapier, Make, or n8n workflows; software accounts and subscriptions are not included.</p>
+      <p><a href="sample-workflow.md">Read a free sample workflow recipe</a>.</p>
+      <p><strong>Delivery:</strong> sent by email within one business day after payment.</p>
+      <p class="price">$67 one-time</p>
+      <a class="button" href="https://buy.stripe.com/3cIbIV95fdKLa4KcWBeQM0y" target="_blank" rel="noopener noreferrer">Buy the five-recipe pack</a>
+    </article>
 
-        <div class="workflows">
-            <div class="workflow-card">
-                <div class="benefit">⏱️ Saves you 30 minutes per new client</div>
-                <h3>🔗 Hot Lead → Booked Discovery Call</h3>
-                <p>Automatically send a personalized email with a Calendly link when a new lead is created in HubSpot.</p>
-                <div class="apps">
-                    <span class="app-tag">HubSpot</span>
-                    <span class="app-tag">Calendly</span>
-                    <span class="app-tag">Gmail</span>
-                </div>
-                <div class="price-row">
-                    <span class="individual-price">$19</span>
-                    <a href="https://checkout.stripe.com/g/pay/cs_live_a1HfmXcM5LlAPLHEY3N3LTIlQb15xaLV0Yw6UdhJecyW8NkN2k3G1MOchl" class="buy-btn" target="_blank">Buy Now</a>
-                </div>
-            </div>
+    <article class="card">
+      <h2>Single workflow setup pilot</h2>
+      <p>A fixed-scope implementation for one workflow using software accounts you control.</p>
+      <ul>
+        <li>One agreed trigger and up to three actions</li>
+        <li>Dummy-data acceptance test</li>
+        <li>Brief handoff note</li>
+        <li>Scope, access method, and timing agreed before work starts</li>
+      </ul>
+      <p>Excludes subscription fees, SMS/phone, custom apps, data migration, ongoing support, and guaranteed business outcomes. Access must use vendor-supported delegated access; never send passwords.</p>
+      <p class="price">$149 one-time</p>
+      <a class="button" href="https://buy.stripe.com/9B6eV7gxHeOPfp4aOteQM0w" target="_blank" rel="noopener noreferrer">View setup pilot checkout</a>
+    </article>
+  </section>
 
-            <div class="workflow-card">
-                <div class="benefit">📝 Closes deals 2x faster</div>
-                <h3>📝 Contract Ready → Signed & Notified</h3>
-                <p>When a deal moves to "Contract Sent" stage, automatically send PandaDoc contracts and get Slack alerts.</p>
-                <div class="apps">
-                    <span class="app-tag">HubSpot</span>
-                    <span class="app-tag">PandaDoc</span>
-                    <span class="app-tag">Slack</span>
-                </div>
-                <div class="price-row">
-                    <span class="individual-price">$19</span>
-                    <a href="https://checkout.stripe.com/c/pay/cs_live_a1ZfosRntFoZLzTgMwNEgIDZux4dI00F7rZrzEn82TiBs9hmkjivJmHZYJ" class="buy-btn" target="_blank">Buy Now</a>
-                </div>
-            </div>
+  <p class="note"><strong>Before buying:</strong> confirm that the recipe format or setup scope fits your needs. Digital-pack delivery is handled manually by email, not as an instant download. Questions: <a href="mailto:annie.agent77@gmail.com">annie.agent77@gmail.com</a>.</p>
 
-            <div class="workflow-card">
-                <div class="benefit">📦 Professional onboarding in 60 seconds</div>
-                <h3>📦 New Client Welcome Package</h3>
-                <p>Automatically send welcome email with Google Drive folder, intake form, and calendar invite.</p>
-                <div class="apps">
-                    <span class="app-tag">PandaDoc</span>
-                    <span class="app-tag">Google Drive</span>
-                    <span class="app-tag">Gmail</span>
-                </div>
-                <div class="price-row">
-                    <span class="individual-price">$19</span>
-                    <a href="https://checkout.stripe.com/g/pay/cs_live_a1P6TTPBDAoA75A1wWoHMs6hpyf9aAGuN1GGj5iL46UkqRcOIEcBdBXzeA" class="buy-btn" target="_blank">Buy Now</a>
-                </div>
-            </div>
-
-            <div class="workflow-card">
-                <div class="benefit">📞 Never forget a follow-up again</div>
-                <h3>📞 Post-Call Follow-Up Automation</h3>
-                <p>After a Calendly call ends, automatically send personalized follow-up with notes and next steps.</p>
-                <div class="apps">
-                    <span class="app-tag">Calendly</span>
-                    <span class="app-tag">Gmail</span>
-                    <span class="app-tag">Google Drive</span>
-                </div>
-                <div class="price-row">
-                    <span class="individual-price">$19</span>
-                    <a href="https://buy.stripe.com/test_a1NGSIIk7uMO88WrM6zbEYfH2WRHJabDZtCi6psmKKv87nLSTSM5XedLQH" class="buy-btn" target="_blank">Buy Now</a>
-                </div>
-            </div>
-
-            <div class="workflow-card">
-                <div class="benefit">🎯 Never lose a client in onboarding</div>
-                <h3>🎯 Onboarding Milestone Tracker</h3>
-                <p>Track onboarding progress across 5 key steps and get Slack alerts if anything stalls.</p>
-                <div class="apps">
-                    <span class="app-tag">HubSpot</span>
-                    <span class="app-tag">Slack</span>
-                    <span class="app-tag">Gmail</span>
-                </div>
-                <div class="price-row">
-                    <span class="individual-price">$19</span>
-                    <a href="https://buy.stripe.com/test_a1bgk117TvOxp6bHhikO54ZYFaSE9SYwq0unOxFaA9KQGxEAPvTrv5veMt" class="buy-btn" target="_blank">Buy Now</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Testimonials Section (coming soon - real testimonials will be added after first customers) -->
-        <section class="testimonials">
-            <h2>What Early Testers Are Saying</h2>
-            <div class="testimonial-grid">
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"Just got these workflows set up — super easy to follow and working great so far!"</p>
-                    <p class="testimonial-author">— Early Tester #1</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section class="faq-section">
-            <h2>Frequently Asked Questions</h2>
-            
-            <div class="faq-item">
-                <div class="faq-question">What automation platforms do these templates work with?</div>
-                <div class="faq-answer">Our templates work with Zapier, Make (formerly Integromat), and n8n. Most workflows can be set up in any of these platforms — choose the one you prefer. All three offer free tiers to get started.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Do I need technical experience to use these templates?</div>
-                <div class="faq-answer">No! Each template includes step-by-step setup instructions. If you can copy-paste and follow directions, you can set these up. The hardest part is connecting your accounts, which we walk you through.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">How long does it take to set up a workflow?</div>
-                <div class="faq-answer">Most customers have a workflow running in 15-30 minutes. The simplest ones (like our Slack notifications) can be set up in 5 minutes.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Do I need paid accounts for the connected tools?</div>
-                <div class="faq-answer">All the tools we connect to (HubSpot, Calendly, PandaDoc, Slack, Gmail) have free tiers that work for our templates. You don't need paid accounts to get started.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Can I get a refund?</div>
-                <div class="faq-answer">Absolutely. We offer a 30-day money-back guarantee. No questions asked. Just email us within 30 days of purchase with your order details.</div>
-            </div>
-        </section>
-
-        <div class="cta-section">
-            <h2>Get All 5 Workflow Templates</h2>
-            <p>Everything you need to automate your entire client onboarding flow.</p>
-            <div class="price"><span class="strike">$95</span> $67 <span>— all 5 templates</span></div>
-            <a href="https://checkout.stripe.com/c/pay/cs_live_a1ZfosRntFoZLzTgMwNEgIDZux4dI00F7rZrzEn82TiBs9hmkjivJmHZYJ" class="cta-button" target="_blank">Get All 5 for $67</a>
-            
-            <div class="upgrade-box">
-                <h3>🔥 UPGRADE: Add Video Tutorials + Setup Docs</h3>
-                <ul>
-                    <li>✅ Step-by-step video walkthroughs for each workflow</li>
-                    <li>✅ Detailed setup guides with screenshots</li>
-                    <li>✅ Troubleshooting tips & common mistakes to avoid</li>
-                    <li>✅ Bonus: Notion template for tracking client onboarding</li>
-                </ul>
-                <div class="upgrade-price">+$29 <span style="font-size:1rem;font-weight:400;">(adds to bundle)</span></div>
-                <a href="https://checkout.stripe.com/g/pay/cs_live_a1P6TTPBDAoA75A1wWoHMs6hpyf9aAGuN1GGj5iL46UkqRcOIEcBdBXzeA" class="cta-button" style="margin-top:15px;background:#ff9800;" target="_blank">Get Bundle + Upgrade for $96</a>
-            </div>
-
-            <p class="urgency">🔒 30-Day Money-Back Guarantee • Instant Digital Delivery</p>
-        </div>
-
-        <!-- Subscription Section -->
-        <div class="cta-section" style="background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); border: 2px solid #4CAF50;">
-            <h2>🔄 Automation Club Membership</h2>
-            <p>Get new automation templates every month + priority support.</p>
-            <div class="price">$9<span>/month</span></div>
-            <ul style="text-align:left;max-width:400px;margin:20px auto;list-style:none;">
-                <li style="margin-bottom:10px;">✅ <strong>1 new template each month</strong> — Real-world workflows from our own business</li>
-                <li style="margin-bottom:10px;">✅ <strong>Early access</strong> — Get new templates before anyone else</li>
-                <li style="margin-bottom:10px;">✅ <strong>Priority support</strong> — Direct help if you get stuck</li>
-                <li style="margin-bottom:10px;">✅ <strong>Cancel anytime</strong> — No lock-in, pause or cancel whenever</li>
-            </ul>
-            <a href="https://buy.stripe.com/test_subscription_link" class="cta-button" style="background:#2e7d32;" target="_blank">Join the Club — $9/mo</a>
-            <p style="margin-top:15px;color:#666;font-size:0.9rem;">First template ships within 24 hours of signup</p>
-        </div>
-    </div>
-
-    <footer>
-        <p>© 2026 Automation Workflows — All rights reserved.</p>
-        <p style="margin-top:15px;">
-            <a href="terms.html">Terms of Service</a> | 
-            <a href="privacy.html">Privacy Policy</a> | 
-            <a href="refund.html">Refund Policy</a> | 
-            <a href="contact.html">Contact Us</a> |
-            <a href="lead-magnet.html">📧 Free Automation Guide</a>
-        </p>
-    </footer>
+  <footer>
+    <p>© 2026 Automation Workflows</p>
+    <p>Templates are educational workflow specifications. Check connector availability and account-plan limits, and test with dummy data before enabling live actions. No compatibility, savings, revenue, or compliance outcomes are guaranteed.</p>
+  </footer>
+</main>
 </body>
 </html>

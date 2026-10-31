@@ -1,72 +1,28 @@
-# Client Onboarding Automation Templates
+# Client-Onboarding Workflow Recipes and Setup Pilot
 
-Ready-to-use automation templates for agencies and freelancers to streamline client onboarding.
+Small, practical workflow documentation for agencies and independent service providers.
 
----
+## Current offers
 
-## What's Included
+- **Five written workflow recipes — $67 one-time:** a ZIP containing `README.md` and `workflows.md`, with five platform-neutral workflow outlines, checklists, safeguards, and dummy-data acceptance tests. These are documentation, not import-ready Zapier/Make/n8n files. Delivery is manual by email within one business day after payment; there is no automatic file delivery.
+  - [Buy the five-recipe pack](https://buy.stripe.com/3cIbIV95fdKLa4KcWBeQM0y)
+- **Single workflow setup pilot — $149 one-time:** one agreed trigger and up to three actions, using accounts the customer controls; includes a dummy-data test and brief handoff note. Agree exact scope, access method, and delivery timing before work starts.
+  - [View setup pilot checkout](https://buy.stripe.com/9B6eV7gxHeOPfp4aOteQM0w)
 
-**5 Client Onboarding Workflows:**
+Free preview: [read one sample workflow recipe](sample-workflow.md).
 
-1. **Hot Lead → Booked Discovery Call**
-   - HubSpot + Calendly + Gmail automation
-   - Auto-personalized emails with Calendly link
+The pilot excludes subscription fees, SMS/phone, custom apps, data migration, ongoing support, and guaranteed business outcomes. Use vendor-supported delegated access; never share passwords. Do not use real customer data or send external messages until the account owner has approved the test and copy.
 
-2. **Contract Ready → Signed & Notified**
-   - PandaDoc + Slack + HubSpot
-   - Real-time notifications when contracts are signed
+## Included in the written pack
 
-3. **New Client Welcome Package**
-   - Auto-send Google Drive folder + intake forms
-   - Professional onboarding in minutes
+1. New inquiry → lead record and acknowledgement
+2. Signed contract → onboarding task
+3. New client → welcome checklist
+4. Completed call → follow-up draft and task
+5. Overdue onboarding item → internal reminder
 
-4. **Post-Call Follow-Up Automation**
-   - Calendly-triggered personalized follow-ups
-   - Close more deals with faster follow-up
+Check connector availability and plan limits in your own accounts. Start with dummy data. The guides do not guarantee compatibility, time savings, revenue, or compliance results.
 
-5. **Onboarding Milestone Tracker**
-   - Track progress + Slack alerts for stalled clients
-   - Never lose a client in onboarding again
+## Contact
 
----
-
-## Pricing
-
-- **Individual Template**: $19
-- **All 5 Templates Bundle**: $67
-- **Bundle + Implementation Support**: $96
-
----
-
-## Subscription
-
-**Automation Club Membership** - $9/month
-- 1 new template each month
-- Early access to new releases
-- Priority support
-- Cancel anytime
-
----
-
-## Supported Platforms
-
-- Zapier
-- Make (Integromat)
-- n8n
-
----
-
-## Resources
-
-- 🌐 [Landing Page](https://annieagent77.github.io/automation-workflows/)
-- 📄 [Affiliate Program](https://annieagent77.github.io/automation-workflows/affiliates.html)
-
----
-
-## Support
-
-- Email: annie.agent77@gmail.com
-
----
-
-© 2026 Automation Workflows
+Questions: [annie.agent77@gmail.com](mailto:annie.agent77@gmail.com)
